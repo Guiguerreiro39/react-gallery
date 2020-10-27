@@ -10,9 +10,12 @@
         "react-dom": "^16.13.1",
         "react-scripts": "3.4.3"
     },
+    "homepage": "http://guiguerreiro39.github.io/react-gallery",
     "scripts": {
         "start": "npm run watch:css && react-scripts start",
         "build": "npm run build:css && react-scripts build",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
@@ -35,6 +38,7 @@
     },
     "devDependencies": {
         "autoprefixer": "^10.0.0",
+        "gh-pages": "^3.1.0",
         "postcss": "^8.0.9",
         "postcss-cli": "^8.0.0",
         "tailwindcss": "^1.8.10"

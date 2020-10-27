@@ -38,7 +38,7 @@ const ImageSearch = ({ searchText, searchType }) => {
                 <div className="flex items-center border-b-2 border-teal-500 py-2">
                     <input
                         type="text"
-                        className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                        className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2  focus:outline-none"
                         placeholder="Search Images.."
                         onChange={(e) => setText(e.target.value)}
                     />
